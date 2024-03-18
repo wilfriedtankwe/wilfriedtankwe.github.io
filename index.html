@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" >
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" >
+    <link rel="manifest" href="./favicon/site.webmanifest" >
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" >
+    <meta name="msapplication-TileColor" content="#da532c" >
+    <meta name="theme-color" content="#ffffff" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" >
+    <link rel="stylesheet" href="./css/fontawesome-free-6.4.0-web/css/all.min.css" >
+    <title>OhMyFood</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="heaser__logo">
+            <img src="./image/logo/ohmyfood@2x.svg" alt="logo" class="header__logo__image">
+        </div>
+        <div class="header__navigation">
+            <nav class="header__navbar" >
+                <ul class="header__navbar__list">
+                    <li  class="header__navbar__list__items"><a href="#" class="header__navbar__list__items__link">Accueil </a></li>
+                    <li class="header__navbar__list__items" ><a href="#service" class="header__navbar__list__items__link">Service</a></li>
+                    <li  class="header__navbar__list__items"><a href="#contact" class="header__navbar__list__items__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="localisation">
+        <p><i class="fa-solid fa-location-pin"></i></p>
+        <p>paris, Belleville</p>
+    </div>
+    <section class="description">
+        <div class="description__text">
+            <h1>Reservez le menu qui vous convient</h1>
+            <p>Decouvrez des resteaurants d'exception selectionnes pas nos soins</p>
+            <a href="#resteaurant">Explorer nos restaurants</a>
+        </div>
+    </section>
+    <section class="fontionnement">
+        <h1 class="fontionnement__title">fontionnement</h1>
+        <div class="fontionnement__list">
+            <div class="fontionnement__list__items">
+                <p class="fontionnement__number">1</p>
+                <p class="fontionnement__icon"><i class="fa-solid fa-mobile"></i></p>
+                <p class="fontionnement__text">choisissez un restaurant</p>
+            </div>
+            <div class="fontionnement__list__items">
+                <p class="fontionnement__number">2</p>
+                <p class="fontionnement__icon"><i class="fa-solid fa-list"></i></p>
+                <p class="fontionnement__text">composez votre menu</p>
+            </div>
+            <div class="fontionnement__list__items">
+                <p class="fontionnement__number">3</p>
+                <p class="fontionnement__icon"><i class="fa-solid fa-house-chimney"></i></p>
+                <p class="fontionnement__text">Degustez au restaurant</p>
+            </div>
+        </div>
+    </section>
+    <section class="restaurants">
+        <h1 class="restaurants__title">restaurants</h1>
+        <div class="container">
+            <div class="element">
+                <div class="element__image">
+                    <a href="./html/paletteGout.html" aria-hidden="true" class="restaurant__image image1">
+                        <div class="element__text">
+                            <div>
+                                <h2 class="element__text__title">La plalette du gout</h2>
+                                <p class="element__text__description">Menilmontant</p>
+                            </div>
+                            <p class="element__text__like"><i class="fa-regular fa-heart"></i></p>
+                        </div>
+                        <p class="element__alert"> Nouveau</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element">
+                <div class="element__image">
+                    <a href="./html/noteEnchantee.html" aria-hidden="true" class="restaurant__image image2">
+                        <div class="element__text">
+                            <div>
+                                <h2 class="element__text__title">La Note Enchantee</h2>
+                                <p class="element__text__description">charonne</p>
+                            </div>
+                            <p class="element__text__like"><i class="fa-regular fa-heart"></i></p>
+                        </div>
+                        <p class="element__alert"> Nouveau</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element">
+                <div class="element__image">
+                    <a href="./html/francaise.html" aria-hidden="true" class="restaurant__image image3">
+                        <div class="element__text">
+                            <div>
+                                <h2 class="element__text__title">A la Francaise</h2>
+                                <p class="element__text__description">Cite Rouge</p>
+                            </div>
+                            <p class="element__text__like"><i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="element">
+                <div class="element__image">
+                    <a href="./html/deliceSens.html" aria-hidden="true" class="restaurant__image image4">
+                        <div class="element__text">
+                            <div>
+                                <h2 class="element__text__title">Le delice des sens </h2>
+                                <p class="element__text__description">Folie-Mericourt</p>
+                            </div>
+                            <p class="element__text__like"><i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <h2>OhMyFood</h2>
+        <div class="element__footer">
+            <div>
+                <i class="fa-solid fa-utensils"></i>
+                <p><a href="">Proposer un restaurant</a></p>
+            </div>
+            <div>
+                <i class="fa-solid fa-tenge-sign"></i>
+                <p><a href="">Devenir partenaire</a></p>
+            </div>
+            <p>Mentions legales</p>
+            <p><a href="">Contact</a></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

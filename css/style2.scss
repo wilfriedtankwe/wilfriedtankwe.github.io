@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+/*___General Styles ___*/
+$primary: #9356dc;
+$secondary: #ff79da;
+$ternaire: #99e2d0;
+$text-sombre: #6a6b78;
+$color-link: white;
+
+* {
+  font-size: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/**___Header __*/
+
+header.header {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  padding: 0.8rem 0;
+  justify-content: space-around;
+  align-items: center;
+
+  nav.header__navbar {
+    ul {
+      display: flex;
+      gap: 3rem;
+
+      a {
+        font-weight: 700;
+      }
+    }
+  }
+  div.back{
+    display: none;
+  }
+}
+div.image__menu1 {
+  height: 70vh;
+  background-image: url("./../image/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px 2rem;
+}
+div.image__menu2 {
+  height: 70vh;
+  background-image: url("./../image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px 2rem;
+}
+div.image__menu3 {
+  height: 70vh;
+  background-image: url("./../image/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px 2rem;
+}
+div.image__menu4 {
+  height: 70vh;
+  background-image: url("./../image/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px 2rem;
+}
+
+
+/**________Section Menu __________**/
+
+section.Menu {
+  background-color: whitesmoke;
+  margin-top: 2px;  
+  border-radius: 30px;
+  position: relative;
+  padding: 4rem;
+  height: auto;
+  div.Menu__like {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    h1.Menu__title {
+      font-family: "Shrikhand", serif;
+      font-size: 1.5rem;
+    }
+    p.element__text__like {
+      cursor: pointer;
+    }
+    p.element__text__like:hover i {
+      color: red;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+  }
+  /**____DIV entrees _____**/
+  div.entrees {
+    padding: 2rem;
+    div.entrees__list__items__text{
+      width: 100%;
+      transition: width 0.8s ease-in-out;
+      display: flex;
+      gap: 15px;
+    }
+    h2.entrees__title {
+      font-size: 1.2rem;
+      position: relative;
+      margin-bottom: 3rem;
+      color: $text-sombre;
+      font-weight: 500;
+    }
+    h2.entrees__title::before {
+      display: block;
+      position: absolute;
+      content: "";
+      background-color: $ternaire;
+      bottom: -5px;
+      width: 3rem;
+      height: 0.2rem;
+    }
+  }
+  div.entrees__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    &__items {
+      display: flex;
+      align-items: center;
+      padding: 0 15rem;
+      height: 7rem;
+      gap: 1.5rem;
+      width: 100%;
+      background-color: #f1f1f1f1;
+      border-radius: 2rem;
+      box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      animation: aparution ease 2s;
+      div.entrees__list__items__reavel {
+        position: absolute;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        background-color: $ternaire;
+        border-radius: 0 2rem 2rem 0;
+        text-align: center;
+        padding: 0.5rem 8rem;
+        transition: all 0.8s ease-in-out;
+        transform: translateX(100%);
+        p {
+          width: 6rem;
+          height: 6rem;
+          background-color: white;
+          border-radius: 50%;
+          color: $ternaire;
+          padding: 1rem 0;
+        }
+        p i {
+          font-size: 3.5rem;
+          transition: all 1s ease-in-out;
+          transform: rotate(80deg);
+        }
+      }
+    }
+    div.items1{
+      animation-delay: 1s;
+    }
+    div.items2{
+      animation-delay: 2s;
+    }
+    div.items3{
+      animation-delay: 3s;
+    }
+    div.items4{
+      animation-delay: 4s;
+    }
+    div.items5{
+      animation-delay: 5s;
+    }
+    div.items6{
+      animation-delay: 6s;
+    }
+    div.items7{
+      animation-delay: 7s;
+    }
+    div.items8{
+      animation-delay: 8s;
+    }
+    div.items9{
+      animation-delay: 9s;
+    }
+    div.items10{
+      animation-delay: 10s;
+    }
+    &__items:hover div.entrees__list__items__reavel {
+      transform: translateX(0);
+    }
+    &__items:hover div.entrees__list__items__reavel i {
+      transform: rotate(0deg);
+    }
+    &__items:hover div.entrees__list__items__text{
+      width: 60%;
+    }
+    @keyframes aparution {
+      from{
+        transform: translateY(-100px);
+        opacity: 0;
+
+      }
+      to{
+        transform: translateY(0);
+      }
+    }
+  }
+
+  /**____DIV plats _____**/
+  div.Plats {
+    div.entrees__list__items__text{
+      width: 100%;
+      transition: width 0.8s ease-in-out;
+      display: flex;
+      gap: 15px;
+    }
+    padding: 2rem;
+    h2.entrees__title {
+      font-size: 1.2rem;
+      position: relative;
+      margin-bottom:3rem;
+      color: $text-sombre;
+      font-weight: 500;
+    }
+    h2.entrees__title::before {
+      display: block;
+      position: absolute;
+      content: "";
+      background-color: $ternaire;
+      bottom: -5px;
+      width: 3rem;
+      height: 0.2rem;
+    }
+  }
+  div.plats__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    &__items {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 20rem;
+      height: 7rem;
+      gap: 1.5rem;
+      width: 100%;
+      background-color: #f1f1f1f1;
+      border-radius: 2rem;
+      box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+      position: relative;
+      cursor: pointer;
+      animation: aparution ease 2s;
+      
+    }
+  }
+  /**____DIV desserts _____**/
+  div.desserts {
+    div.entrees__list__items__text{
+      width: 100%;
+      transition: width 0.8s ease-in-out;
+      display: flex;
+      gap: 15px;
+    }
+    padding: 2rem;
+    h2.entrees__title {
+      font-size: 1.2rem;
+      position: relative;
+      margin-bottom: 3rem;
+      color: $text-sombre;
+      font-weight: 500;
+    }
+    h2.entrees__title::before {
+      display: block;
+      position: absolute;
+      content: "";
+      background-color: $ternaire;
+      bottom: -5px;
+      width: 3rem;
+      height: 0.2rem;
+    }
+  }
+  div.desserts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    &__items {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 20rem;
+      height: 7rem;
+      gap: 1.5rem;
+      width: 100%;
+      background-color: #f1f1f1f1;
+      border-radius: 2rem;
+      box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+      position: relative;
+      cursor: pointer;
+      animation: aparution ease 2s;
+
+    }
+  }
+
+  a.commande {
+    display: block;
+    width: 15rem;
+    height: 2.6rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: 1.5rem;
+    color: $color-link;
+    font-weight: 700;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, $secondary, $primary);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/***______Footer _________**/
+
+footer.footer {
+  color: white;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  h2 {
+    font-family: "Shrikhand", serif;
+    font-size: 2rem;
+  }
+  a {
+    color: white;
+  }
+  div.element__footer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+  }
+}
+  
+
+/**_____Responsive______*/
+
+@media screen and (max-width:768px){
+  header.header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    padding: 0.8rem 0;
+    justify-content: space-around;
+    align-items: center;
+    div.heaser__logo{
+      img{
+        max-width: 160px;
+      }
+    }
+    nav.header__navbar {
+      display: none;
+    }
+    div.back{
+      display: block;
+      i{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  div.body{
+    position:relative;
+    div.image__menu2{
+      z-index: 2;
+      margin: 0;
+    }
+    div.image__menu3{
+      z-index: 2;
+      margin: 0;
+    }    
+    div.image__menu4{
+      z-index: 2;
+      margin: 0;
+    }    
+    div.image__menu1{
+      z-index: 2;
+      margin: 0;
+    }
+    section.Menu{
+      height: auto;
+      padding: 0;
+      min-height: 260vh;
+      position: relative;
+      width: 100%;
+      
+      z-index: 4;
+      div.Menu{
+        padding: 0;
+        width: 100%;
+      }
+      div.entrees__list{
+        position: relative;
+        &__items{
+          padding:0 1rem;
+          display: flex;
+          align-items: center;
+          height: 7rem;
+          gap: 1rem;
+          width: 100%;
+          min-width: 250px;
+          background-color: #f1f1f1f1;
+          border-radius: 2rem;
+          box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+          position: relative;
+          cursor: pointer;
+          overflow: hidden;
+          white-space: nowrap;
+          animation: aparution ease 2s;
+          div.entrees__list__items__text{
+            display: flex;
+            gap: 2rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            div.text{
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            h3.entrees__list__items__text__title{
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            p{
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+          div.entrees__list__items__reavel{
+            position: absolute;
+            right: 0;
+            min-width: 100px;
+            height: 100%;
+            background-color: $ternaire;
+            border-radius: 0 2rem 2rem 0;
+            text-align: center;
+            padding: 2rem 1rem;
+            transition: all 0.8s ease-in-out;
+            transform: translateX(100%);
+            p {
+              width: 3rem;
+              height: 3rem;
+              background-color: white;
+              border-radius: 50%;
+              color: $ternaire;
+              padding: 0.5rem 0;
+            }
+            p i {
+              font-size: 2rem;
+            }
+          }
+          
+        }
+        &__items:hover div.entrees__list__items__reavel {
+          transform: translateX(0);
+        }
+        &__items:hover div.entrees__list__items__reavel i {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+  footer.footer{
+    margin-top: 100px;
+    flex-wrap: wrap;
+    div.element__footer{
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+  /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 768px */
+  div.body{
+    position:relative;
+    div.image__menu2{
+      z-index: 2;
+      margin: 0;
+    }
+    div.image__menu3{
+      z-index: 2;
+      margin: 0;
+    }    
+    div.image__menu4{
+      z-index: 2;
+      margin: 0;
+    }    
+    div.image__menu1{
+      z-index: 2;
+      margin: 0;
+    }
+    section.Menu{
+    
+      height: auto;
+      padding: 0;
+      min-height: 260vh;
+      position: relative;
+      width: 100%;
+      
+      z-index: 4;
+      div.Menu{
+        padding: 0;
+        width: 100%;
+      }
+      div.entrees__list{
+        position: relative;
+        &__items{
+          padding:0 0;
+          display: flex;
+          height: 7rem;
+          gap: 1rem;
+          
+          width: 100%;
+          min-width: 250px;
+          background-color: #f1f1f1f1;
+          border-radius: 2rem;
+          box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+          position: relative;
+          cursor: pointer;
+          overflow: hidden;
+          white-space: nowrap;
+          animation: aparution ease 2s;
+          position: relative;
+          div.entrees__list__items__text{
+            display: flex;
+            gap: 2rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            div.text{
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            h3.entrees__list__items__text__title{
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            p{
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+          div.entrees__list__items__reavel{
+            position: absolute;
+            right: 0;
+            min-width: 100px;
+            height: 100%;
+            background-color: $ternaire;
+            border-radius: 0 2rem 2rem 0;
+            text-align: center;
+            padding: 2rem 1rem;
+            transition: all 0.8s ease-in-out;
+            transform: translateX(100%);
+            p {
+              width: 3rem;
+              height: 3rem;
+              background-color: white;
+              border-radius: 50%;
+              color: $ternaire;
+              padding: 0.5rem 0;
+            }
+            p i {
+              font-size: 2rem;
+            }
+          }
+          
+        }
+        &__items:hover div.entrees__list__items__reavel {
+          transform: translateX(0);
+        }
+        &__items:hover div.entrees__list__items__reavel i {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}

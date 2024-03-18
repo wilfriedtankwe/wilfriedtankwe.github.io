@@ -1,0 +1,402 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*___General Styles ___*/
+* {
+  font-size: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/**___Header __*/
+header.header {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  padding: 0.8rem 0;
+  justify-content: space-around;
+  align-items: center;
+}
+header.header nav.header__navbar ul {
+  display: flex;
+  gap: 3rem;
+}
+header.header nav.header__navbar ul a {
+  font-weight: 700;
+}
+
+/** _________Div localisation ____*/
+div.localisation {
+  width: 100%;
+  background-color: rgba(241, 241, 241, 0.9450980392);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+  padding: 1.3rem 0;
+  cursor: pointer;
+}
+
+/**_______section description ____*/
+section.description {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1.8rem 0;
+  background-color: rgba(249, 249, 249, 0.9764705882);
+}
+section.description div.description__text {
+  width: 20rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+section.description div.description__text h1 {
+  font-size: 1.5rem;
+  font-family: "Shrikhand", serif;
+  line-height: 2rem;
+  text-transform: capitalize;
+}
+section.description div.description__text p {
+  color: #6a6b78;
+}
+section.description div.description__text a {
+  display: block;
+  width: 15rem;
+  height: 2.3rem;
+  text-align: center;
+  padding: 0.3rem 0;
+  margin-top: 1.5rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 2rem;
+  background-image: linear-gradient(to right, #FF79DA, #9356DC);
+  position: relative;
+  left: 10%;
+}
+
+/**_____Section fontionnememt____ **/
+section.fontionnement {
+  height: auto;
+  margin: 1rem 10rem;
+}
+section.fontionnement h1.fontionnement__title {
+  font-size: 1.5rem;
+  font-family: "Shrikhand", serif;
+  margin: 2rem 0;
+  text-transform: capitalize;
+}
+section.fontionnement div.fontionnement__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+section.fontionnement div.fontionnement__list__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  gap: 1.5rem;
+  width: 100%;
+  background-color: rgba(241, 241, 241, 0.9450980392);
+  border-radius: 2rem;
+  box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+section.fontionnement div.fontionnement__list__items p.fontionnement__number {
+  background-color: #9356DC;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 0.7rem;
+  position: absolute;
+  left: -12px;
+  cursor: pointer;
+}
+section.fontionnement div.fontionnement__list__items p.fontionnement__icon {
+  color: #6a6b78;
+}
+section.fontionnement div.fontionnement__list__items p.fontionnement__text {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+section.fontionnement div.fontionnement__list div.fontionnement__list__items:hover p.fontionnement__icon {
+  color: #9356DC;
+  font-weight: 700;
+}
+
+section.restaurants {
+  height: auto;
+  margin: 3rem 3rem;
+}
+section.restaurants h1.restaurants__title {
+  font-size: 1.5rem;
+  font-family: "Shrikhand", serif;
+  margin: 2rem 0;
+  text-transform: capitalize;
+}
+section.restaurants div.container {
+  background-color: rgba(241, 241, 241, 0.9450980392);
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 10px;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+section.restaurants div.container div.element {
+  height: 15rem;
+  width: 17rem;
+  border-radius: 3rem 5rem;
+  background-color: white;
+}
+section.restaurants div.container div.element div.element__image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+section.restaurants div.container div.element div.element__image .restaurant__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+section.restaurants div.container div.element div.element__image .restaurant__image p.element__alert {
+  background-color: #99E2D0;
+  width: 5rem;
+  height: 2rem;
+  text-align: center;
+  padding-top: 0.3rem;
+  position: absolute;
+  right: 0.8rem;
+  top: 1rem;
+}
+section.restaurants div.container div.element div.element__image .restaurant__image div.element__text {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.restaurants div.container div.element div.element__image .restaurant__image div.element__text p.element__text__description {
+  color: #6a6b78;
+}
+section.restaurants div.container div.element div.element__image .restaurant__image div.element__text p.element__text__like:hover i {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+section.restaurants div.container div.element div.element__image .image1 {
+  background-image: url("./../image/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+section.restaurants div.container div.element div.element__image .image2 {
+  background-image: url("./../image/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+section.restaurants div.container div.element div.element__image .image3 {
+  background-image: url("./../image/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+section.restaurants div.container div.element div.element__image .image4 {
+  background-image: url("./../image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+/***______Footer _________**/
+footer.footer {
+  color: white;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+footer.footer h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 2rem;
+}
+footer.footer a {
+  color: white;
+}
+footer.footer div.element__footer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+footer.footer div.element__footer div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/**____________Responsive____________**/
+@media screen and (max-width: 768px) {
+  header div.heaser__logo img {
+    max-width: 300px;
+  }
+  header div.header__navigation {
+    display: none;
+  }
+  section.description div.description__text {
+    max-width: 250px;
+  }
+  section.description div.description__text a {
+    width: 15rem;
+    max-width: 192px;
+    flex-grow: 1;
+  }
+  section.fontionnement {
+    height: auto;
+    margin: 1rem 2rem;
+  }
+  section.fontionnement h1.fontionnement__title {
+    font-size: 1.5rem;
+    font-family: "Shrikhand", serif;
+    margin: 2rem 0;
+    text-transform: capitalize;
+  }
+  section.fontionnement div.fontionnement__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  section.fontionnement div.fontionnement__list__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    gap: 1.5rem;
+    max-width: 100%;
+    background-color: rgba(241, 241, 241, 0.9450980392);
+    border-radius: 2rem;
+    box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+    position: relative;
+    text-align: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    cursor: pointer;
+  }
+  section.fontionnement div.fontionnement__list__items p.fontionnement__number {
+    background-color: #9356DC;
+    max-height: 2.1rem;
+    max-width: 2.1rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0.5rem;
+    position: absolute;
+    left: -12px;
+    cursor: pointer;
+  }
+  section.fontionnement div.fontionnement__list__items p.fontionnement__icon {
+    color: #6a6b78;
+  }
+  section.fontionnement div.fontionnement__list__items p.fontionnement__text {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  section.fontionnement div.fontionnement__list div.fontionnement__list__items:hover p.fontionnement__icon {
+    color: #9356DC;
+    font-weight: 700;
+  }
+  section.restaurants {
+    height: auto;
+    margin: 3rem 2rem;
+  }
+  section.restaurants div.container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  section.restaurants div.container div.element {
+    width: 100%;
+    min-height: 10rem;
+    height: 18rem;
+  }
+  section.restaurants div.container div.element div.element__image {
+    width: 100%;
+  }
+  footer.footer {
+    flex-wrap: wrap;
+  }
+  footer.footer div.element__footer {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 768px */
+  section.restaurants {
+    height: auto;
+    margin: 3rem 15px;
+    text-align: center;
+  }
+  section.restaurants div.container {
+    display: flex;
+    height: auto;
+    background-color: rgba(241, 241, 241, 0.9450980392);
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+  section.restaurants div.container div.element {
+    width: 100%;
+    min-height: 10rem;
+    height: 18rem;
+  }
+  section.restaurants div.container div.element div.element__image {
+    width: 100%;
+  }
+  section.fontionnement {
+    height: auto;
+    text-align: center;
+    margin: 1rem 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  section.fontionnement {
+    text-align: center;
+  }
+  section.restaurants {
+    text-align: center;
+  }
+  section.restaurants div.container {
+    grid-template-columns: repeat(3, 2fr);
+  }
+  section.restaurants div.container div.element {
+    width: 100%;
+    min-height: 10rem;
+    height: 18rem;
+  }
+  section.restaurants div.container div.element div.element__image {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

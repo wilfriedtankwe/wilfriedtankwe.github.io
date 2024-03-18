@@ -1,0 +1,606 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*___General Styles ___*/
+* {
+  font-size: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/**___Header __*/
+header.header {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  padding: 0.8rem 0;
+  justify-content: space-around;
+  align-items: center;
+}
+header.header nav.header__navbar ul {
+  display: flex;
+  gap: 3rem;
+}
+header.header nav.header__navbar ul a {
+  font-weight: 700;
+}
+header.header div.back {
+  display: none;
+}
+
+div.image__menu1 {
+  height: 70vh;
+  background-image: url("./../image/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px 2rem;
+}
+
+div.image__menu2 {
+  height: 70vh;
+  background-image: url("./../image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px 2rem;
+}
+
+div.image__menu3 {
+  height: 70vh;
+  background-image: url("./../image/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px 2rem;
+}
+
+div.image__menu4 {
+  height: 70vh;
+  background-image: url("./../image/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2px 2rem;
+}
+
+/**________Section Menu __________**/
+section.Menu {
+  background-color: whitesmoke;
+  margin-top: 2px;
+  border-radius: 30px;
+  position: relative;
+  padding: 4rem;
+  height: auto;
+  /**____DIV entrees _____**/
+  /**____DIV plats _____**/
+  /**____DIV desserts _____**/
+}
+section.Menu div.Menu__like {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section.Menu div.Menu__like h1.Menu__title {
+  font-family: "Shrikhand", serif;
+  font-size: 1.5rem;
+}
+section.Menu div.Menu__like p.element__text__like {
+  cursor: pointer;
+}
+section.Menu div.Menu__like p.element__text__like:hover i {
+  color: red;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+section.Menu div.entrees {
+  padding: 2rem;
+}
+section.Menu div.entrees div.entrees__list__items__text {
+  width: 100%;
+  transition: width 0.8s ease-in-out;
+  display: flex;
+  gap: 15px;
+}
+section.Menu div.entrees h2.entrees__title {
+  font-size: 1.2rem;
+  position: relative;
+  margin-bottom: 3rem;
+  color: #6a6b78;
+  font-weight: 500;
+}
+section.Menu div.entrees h2.entrees__title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: #99e2d0;
+  bottom: -5px;
+  width: 3rem;
+  height: 0.2rem;
+}
+section.Menu div.entrees__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+section.Menu div.entrees__list__items {
+  display: flex;
+  align-items: center;
+  padding: 0 15rem;
+  height: 7rem;
+  gap: 1.5rem;
+  width: 100%;
+  background-color: rgba(241, 241, 241, 0.9450980392);
+  border-radius: 2rem;
+  box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  animation: aparution ease 2s;
+}
+section.Menu div.entrees__list__items div.entrees__list__items__reavel {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #99e2d0;
+  border-radius: 0 2rem 2rem 0;
+  text-align: center;
+  padding: 0.5rem 8rem;
+  transition: all 0.8s ease-in-out;
+  transform: translateX(100%);
+}
+section.Menu div.entrees__list__items div.entrees__list__items__reavel p {
+  width: 6rem;
+  height: 6rem;
+  background-color: white;
+  border-radius: 50%;
+  color: #99e2d0;
+  padding: 1rem 0;
+}
+section.Menu div.entrees__list__items div.entrees__list__items__reavel p i {
+  font-size: 3.5rem;
+  transition: all 1s ease-in-out;
+  transform: rotate(80deg);
+}
+section.Menu div.entrees__list div.items1 {
+  animation-delay: 1s;
+}
+section.Menu div.entrees__list div.items2 {
+  animation-delay: 2s;
+}
+section.Menu div.entrees__list div.items3 {
+  animation-delay: 3s;
+}
+section.Menu div.entrees__list div.items4 {
+  animation-delay: 4s;
+}
+section.Menu div.entrees__list div.items5 {
+  animation-delay: 5s;
+}
+section.Menu div.entrees__list div.items6 {
+  animation-delay: 6s;
+}
+section.Menu div.entrees__list div.items7 {
+  animation-delay: 7s;
+}
+section.Menu div.entrees__list div.items8 {
+  animation-delay: 8s;
+}
+section.Menu div.entrees__list div.items9 {
+  animation-delay: 9s;
+}
+section.Menu div.entrees__list div.items10 {
+  animation-delay: 10s;
+}
+section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel {
+  transform: translateX(0);
+}
+section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel i {
+  transform: rotate(0deg);
+}
+section.Menu div.entrees__list__items:hover div.entrees__list__items__text {
+  width: 60%;
+}
+@keyframes aparution {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+section.Menu div.Plats {
+  padding: 2rem;
+}
+section.Menu div.Plats div.entrees__list__items__text {
+  width: 100%;
+  transition: width 0.8s ease-in-out;
+  display: flex;
+  gap: 15px;
+}
+section.Menu div.Plats h2.entrees__title {
+  font-size: 1.2rem;
+  position: relative;
+  margin-bottom: 3rem;
+  color: #6a6b78;
+  font-weight: 500;
+}
+section.Menu div.Plats h2.entrees__title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: #99e2d0;
+  bottom: -5px;
+  width: 3rem;
+  height: 0.2rem;
+}
+section.Menu div.plats__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+section.Menu div.plats__list__items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20rem;
+  height: 7rem;
+  gap: 1.5rem;
+  width: 100%;
+  background-color: rgba(241, 241, 241, 0.9450980392);
+  border-radius: 2rem;
+  box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+  position: relative;
+  cursor: pointer;
+  animation: aparution ease 2s;
+}
+section.Menu div.desserts {
+  padding: 2rem;
+}
+section.Menu div.desserts div.entrees__list__items__text {
+  width: 100%;
+  transition: width 0.8s ease-in-out;
+  display: flex;
+  gap: 15px;
+}
+section.Menu div.desserts h2.entrees__title {
+  font-size: 1.2rem;
+  position: relative;
+  margin-bottom: 3rem;
+  color: #6a6b78;
+  font-weight: 500;
+}
+section.Menu div.desserts h2.entrees__title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: #99e2d0;
+  bottom: -5px;
+  width: 3rem;
+  height: 0.2rem;
+}
+section.Menu div.desserts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+section.Menu div.desserts__list__items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20rem;
+  height: 7rem;
+  gap: 1.5rem;
+  width: 100%;
+  background-color: rgba(241, 241, 241, 0.9450980392);
+  border-radius: 2rem;
+  box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+  position: relative;
+  cursor: pointer;
+  animation: aparution ease 2s;
+}
+section.Menu a.commande {
+  display: block;
+  width: 15rem;
+  height: 2.6rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-top: 1.5rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  background-image: linear-gradient(to right, #ff79da, #9356dc);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/***______Footer _________**/
+footer.footer {
+  color: white;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+footer.footer h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 2rem;
+}
+footer.footer a {
+  color: white;
+}
+footer.footer div.element__footer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+footer.footer div.element__footer div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/**_____Responsive______*/
+@media screen and (max-width: 768px) {
+  header.header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    padding: 0.8rem 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header.header div.heaser__logo img {
+    max-width: 160px;
+  }
+  header.header nav.header__navbar {
+    display: none;
+  }
+  header.header div.back {
+    display: block;
+  }
+  header.header div.back i {
+    font-size: 1.5rem;
+  }
+  div.body {
+    position: relative;
+  }
+  div.body div.image__menu2 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body div.image__menu3 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body div.image__menu4 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body div.image__menu1 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body section.Menu {
+    height: auto;
+    padding: 0;
+    min-height: 260vh;
+    position: relative;
+    width: 100%;
+    z-index: 4;
+  }
+  div.body section.Menu div.Menu {
+    padding: 0;
+    width: 100%;
+  }
+  div.body section.Menu div.entrees__list {
+    position: relative;
+  }
+  div.body section.Menu div.entrees__list__items {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    gap: 1rem;
+    width: 100%;
+    min-width: 250px;
+    background-color: rgba(241, 241, 241, 0.9450980392);
+    border-radius: 2rem;
+    box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: aparution ease 2s;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text div.text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text h3.entrees__list__items__text__title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__reavel {
+    position: absolute;
+    right: 0;
+    min-width: 100px;
+    height: 100%;
+    background-color: #99e2d0;
+    border-radius: 0 2rem 2rem 0;
+    text-align: center;
+    padding: 2rem 1rem;
+    transition: all 0.8s ease-in-out;
+    transform: translateX(100%);
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__reavel p {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    color: #99e2d0;
+    padding: 0.5rem 0;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__reavel p i {
+    font-size: 2rem;
+  }
+  div.body section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel {
+    transform: translateX(0);
+  }
+  div.body section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel i {
+    transform: rotate(0deg);
+  }
+  footer.footer {
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+  footer.footer div.element__footer {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 768px */
+  div.body {
+    position: relative;
+  }
+  div.body div.image__menu2 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body div.image__menu3 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body div.image__menu4 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body div.image__menu1 {
+    z-index: 2;
+    margin: 0;
+  }
+  div.body section.Menu {
+    height: auto;
+    padding: 0;
+    min-height: 260vh;
+    position: relative;
+    width: 100%;
+    z-index: 4;
+  }
+  div.body section.Menu div.Menu {
+    padding: 0;
+    width: 100%;
+  }
+  div.body section.Menu div.entrees__list {
+    position: relative;
+  }
+  div.body section.Menu div.entrees__list__items {
+    padding: 0 0;
+    display: flex;
+    height: 7rem;
+    gap: 1rem;
+    width: 100%;
+    min-width: 250px;
+    background-color: rgba(241, 241, 241, 0.9450980392);
+    border-radius: 2rem;
+    box-shadow: 12px 1px 10px 10px rgb(230, 227, 227);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: aparution ease 2s;
+    position: relative;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text div.text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text h3.entrees__list__items__text__title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__text p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__reavel {
+    position: absolute;
+    right: 0;
+    min-width: 100px;
+    height: 100%;
+    background-color: #99e2d0;
+    border-radius: 0 2rem 2rem 0;
+    text-align: center;
+    padding: 2rem 1rem;
+    transition: all 0.8s ease-in-out;
+    transform: translateX(100%);
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__reavel p {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    color: #99e2d0;
+    padding: 0.5rem 0;
+  }
+  div.body section.Menu div.entrees__list__items div.entrees__list__items__reavel p i {
+    font-size: 2rem;
+  }
+  div.body section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel {
+    transform: translateX(0);
+  }
+  div.body section.Menu div.entrees__list__items:hover div.entrees__list__items__reavel i {
+    transform: rotate(0deg);
+  }
+}/*# sourceMappingURL=style2.css.map */
